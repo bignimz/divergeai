@@ -122,28 +122,40 @@
         </div>
 
         <!-- Hero content -->
-        <div class="hero">
-          <h6 class="hero-sub">Artificial intelligence & robotics</h6>
-          <h2 class="hero-heading" style="font-size: 3vw">
-            Get closer look how business develop in AI data analysis
-          </h2>
-          <p class="hero-content">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nostrum
-            consectetur iure reiciendis unde ipsa similique possimus.
-          </p>
-          <a
-            href="#"
-            class="btn header-btn px-5 btn-dark"
-            style="max-width: 300px"
-            >Discover more
-            <i class="fa fa-arrow-circle-right" aria-hidden="true"></i
-          ></a>
+        <div class="hero row">
+          <div class="hero-left col-md-6 col-12 mx-auto mb-4">
+            <div class="hero-content-wrapper">
+              <h6 class="hero-sub">Artificial intelligence & robotics</h6>
+              <h2 class="hero-heading" style="font-size: 3vw">
+                Get closer look how business develop in AI data analysis
+              </h2>
+              <p class="hero-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                nostrum consectetur iure reiciendis unde ipsa similique
+                possimus.
+              </p>
+              <a
+                href="#"
+                class="btn header-btn px-5 btn-dark"
+                style="max-width: 300px"
+                >Discover more
+                <i class="fa fa-arrow-circle-right" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+          <div class="hero-right col-md-6 col-12 mx-auto mb-4">
+            <img
+              src="./assets/images/hero-ai.png"
+              alt=""
+              class="img-fluid hero-img"
+            />
+          </div>
         </div>
       </div>
     </header>
 
     <!-- Services provided section start -->
-    <section class="services-provided py-5">
+    <section class="services-provided py-5" loading="lazy">
       <div class="container">
         <div class="mx-auto" style="max-width: 700px">
           <p class="subtitle text-center">Services we provide</p>
@@ -212,7 +224,7 @@
     <!-- Services section end -->
 
     <!-- About section start -->
-    <section class="about-section py-5">
+    <section class="about-section py-5" loading="lazy">
       <div class="container">
         <div class="about-wrapper row">
           <div class="about-left col-md-4 col-12 mx-auto">
@@ -266,7 +278,7 @@
     <!-- About section end -->
 
     <!-- Data analysis start -->
-    <section class="data-analysis-section text-white">
+    <section class="data-analysis-section text-white" loading="lazy">
       <div class="container">
         <div class="data-container">
           <p class="subtitle data-sub">Data Analysis</p>
@@ -283,14 +295,14 @@
             <div class="data-box">
               <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
               <div class="data-box-content">
-                <span class="number">398+</span
+                <span class="number" data-target="398">0</span
                 ><span class="box-text">Completed projects</span>
               </div>
             </div>
             <div class="data-box">
               <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
               <div class="data-box-content">
-                <span class="number">398+</span
+                <span class="number" data-target="100">0</span
                 ><span class="box-text">Satisfied clients</span>
               </div>
             </div>
@@ -308,7 +320,14 @@
         <div class="row mx-auto owl-carousel owl-theme">
           <div
             class="cs-card shadow-sm col-12 mx-auto p-4"
-            style="background-image: url('./assets/images/3J7A2842.avif')"
+            style="
+              background-image: linear-gradient(
+                  to bottom,
+                  rgba(1, 1, 1, 0),
+                  rgba(0, 0, 0, 0.9)
+                ),
+                url('./assets/images/3J7A2842.avif');
+            "
           >
             <div class="cs-content">
               <p class="cs-category">Artificial Intelligence</p>
@@ -319,7 +338,14 @@
 
           <div
             class="cs-card shadow-sm col-12 mx-auto p-4"
-            style="background-image: url('./assets/images/3J7A2910.avif')"
+            style="
+              background-image: linear-gradient(
+                  to bottom,
+                  rgba(1, 1, 1, 0),
+                  rgba(0, 0, 0, 0.9)
+                ),
+                url('./assets/images/3J7A2910.avif');
+            "
           >
             <div class="cs-content">
               <p class="cs-category">Artificial Intelligence</p>
