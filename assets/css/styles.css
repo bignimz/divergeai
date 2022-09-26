@@ -90,7 +90,7 @@ p {
 header {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.4),
       rgba(17, 83, 193, 0.9)
@@ -98,7 +98,7 @@ header {
     url(../../assets/images/hero-ai.png);
   background-repeat: no-repeat;
   background-position: right;
-  background-size: contain;
+  background-size: contain; */
   background-color: rgb(17, 83, 193);
   padding: 20px 0px;
   position: relative;
@@ -158,7 +158,7 @@ header {
 }
 
 .nav-brand img {
-  width: 150px;
+  width: 200px;
 }
 
 .nav-link {
@@ -214,6 +214,12 @@ header {
   text-decoration: none;
   font-weight: 600;
   margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #bbbbbb;
+}
+
+.dd-link:last-child {
+  border-bottom: none;
 }
 
 .header-btn {
@@ -245,9 +251,30 @@ header {
   color: var(--primary);
 }
 
+.nav .sticky {
+  background-color: #fff;
+}
+
 .hero {
-  max-width: 50%;
-  margin: 20% 0;
+  position: relative;
+  bottom: 50%;
+  top: 25%;
+}
+
+.hero-right {
+  position: relative;
+}
+
+.hero-content-wrapper {
+  margin-top: 50%;
+}
+
+.hero-img {
+  max-width: 90%;
+  width: 100%;
+  position: relative;
+  bottom: -20px;
+  right: -200px;
 }
 
 .hero-sub {
@@ -373,7 +400,7 @@ header {
   background-image: url(../../assets/images/robot-1.png);
   background-repeat: no-repeat;
   background-position: right;
-  background-size: 100vh;
+  background-size: 76vh;
   background-color: #3b7ef1;
   padding: 100px 0;
 }
@@ -426,11 +453,6 @@ header {
   border-radius: 20px;
   width: 350px;
   height: 400px;
-  background: linear-gradient(
-    to bottom,
-    rgba(1, 1, 1, 0.2),
-    rgba(0, 0, 0, 0.7)
-  );
   display: flex;
   flex-direction: column;
   position: relative;
@@ -631,6 +653,12 @@ footer {
     display: block;
   }
 
+  .hero-img {
+    width: 80%;
+    right: 0px;
+    top: 50px;
+  }
+
   .about-img-1 {
     border-radius: 0;
     position: initial;
@@ -648,6 +676,7 @@ footer {
     position: relative;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
       url(../../assets/images/robot-1.png);
+    background-size: 100vh;
   }
 
   .data-boxes {
@@ -659,8 +688,39 @@ footer {
   }
 }
 
-@media screen and (max-width: 368px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .hero-img {
+    width: 400px;
+    right: -100px;
+    top: 50px;
+  }
+}
+
+@media screen and (max-width: 576px) {
   .testimony {
     text-align: center;
+  }
+
+  .hero-content-wrapper {
+    margin-top: 77px;
+    text-align: center;
+  }
+
+  .header-btn {
+    margin: 0 auto;
+  }
+
+  .hero-img {
+    width: 50%;
+    right: -100px;
+    top: 50px;
+  }
+
+  .data-analysis-section {
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+      url(../../assets/images/robot-1.png);
+    background-size: 70vh;
+    background-position: center;
   }
 }
