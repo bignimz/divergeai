@@ -1,7 +1,7 @@
 @import "./styles.css";
 
 .page-header {
-  height: 40vh;
+  height: 60vh;
   background-image: url(../../assets/images/detail-bg.png);
   background-repeat: no-repeat;
   background-position: 90% 115px;
